@@ -1,16 +1,14 @@
-<<<<<<< HEAD
 # Online-Dictionary-of-Maqiao
 Columbia University - China in the Modern World (jp4371)
 
 # Maqiao Dictionary
 
-Welcome to the **Maqiao Dictionary** – an online dictionary application inspired by the vocabulary and cultural richness of Maqiao. This web app allows users to browse, search for, and explore words, definitions, examples, and related terms.
+Welcome to the **Online Dictionary of Maqiao Dictionary** – an online dictionary application inspired by the vocabulary and cultural richness of Maqiao, based on the book by Han Shaogong. This web app allows users to browse, search for, and explore words, definitions, examples, and related terms.
 
 ---
 
 ## 🚀 Features
 
-- Browse through all dictionary entries.
 - Search for specific words and view related details.
 - Display definitions, examples, and page numbers for clarity.
 - Responsive and clean UI for ease of use.
@@ -139,18 +137,5 @@ Contributions are welcome! To contribute:
 
 This project is licensed under the **MIT License**.
 =======
-<Online Dictionary of Maqiao> by Zen Park (jp4371)
-Welcome to the Online Dictionary of Maqiao – an online dictionary application inspired by the vocabulary and cultural richness of Maqiao, based on the book “Dictionary of Maqiao” by Han Shaogong. This web app allows users to browse, search for, and explore words, definitions, examples, and related terms.
-
-<Features>
-Search for specific words and view related details.
-Display definitions, examples, and page numbers for clarity.
-Responsive and clean UI for ease of use.
-
-<Tech Stack>
-Backend: Flask (Python)
-Database: PostgreSQL
-Frontend: HTML5, CSS3
-Hosting: Local Development / Ready for Deployment
 
 >>>>>>> 5ebf183 (Initial commit - Maqiao Dictionary Project)
