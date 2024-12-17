@@ -1,7 +1,7 @@
 # Online-Dictionary-of-Maqiao
 Columbia University - China in the Modern World (jp4371)
 
-# Maqiao Dictionary
+# Online Dictionary of Maqiao
 
 Welcome to the **Online Dictionary of Maqiao Dictionary** – an online dictionary application inspired by the vocabulary and cultural richness of Maqiao, based on the book by Han Shaogong. This web app allows users to browse, search for, and explore words, definitions, examples, and related terms.
 
