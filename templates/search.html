@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqiao Dictionary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Online Dictionary of Maqiao!</h1>
+    <p>China in the Modern World</p>
+
+    <!-- Search Form -->
+    <form method="get" action="{{ url_for('search') }}">
+        <input type="text" name="q" placeholder="Enter a word :)" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Display Results -->
+    {% if query %}
+        <h2>Search Results for "{{ query }}":</h2>
+        {% if results %}
+            <ul>
+                {% for entry in results %}
+                    <li>
+                        <strong>{{ entry.word }}</strong> (Page {{ entry.page_number }})<br>
+                        {{ entry.definition }}<br>
+                        <em>Example: {{ entry.example }}</em><br>
+                        <small>Related: {{ entry.related }}</small>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No results found.</p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
+

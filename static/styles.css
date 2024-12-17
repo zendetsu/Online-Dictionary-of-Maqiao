@@ -1,0 +1,90 @@
+/* General Styling */
+body {
+    background-image: url('/static/maqiaoImage.jpg');
+    background-size: cover;
+    background-position: static;
+    background-repeat: no-repeat;
+    background-color: #8B0000; /* Dark Red background */
+    color: #FFFFFF; /* White text for contrast */
+    font-family: Arial, Courier New;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Search Form */
+form {
+    margin: 10px 0;
+}
+
+img {
+    max-width: 700px; /* Ensures the image won't overflow the container */
+    height: auto;    /* Maintains the aspect ratio */
+    display: block;  /* Avoids extra spacing below the image */
+    margin: 0 auto;  /* Centers the image horizontally */
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 2em;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #8B0000;
+}
+
+button {
+    font-size: 2em;
+    font-family: "Courier New", Courier, monospace;
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+    color: #8B0000;
+    border: 1px solid #8B0000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Word Entries */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #FFF;
+    color: #8B0000;
+    border-radius: 10px;
+    text-align: left;
+    display: inline-block;
+    max-width: 600px;
+}
+
+/* Word Styling */
+li strong {
+    display: block;
+    font-size: 3em; /* Word size - twice the default */
+    margin-bottom: 10px;
+}
+
+li div {
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1.6; /* Better readability */
+}
+
+li em {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    font-style: italic;
+}
+

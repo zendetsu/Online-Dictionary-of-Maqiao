@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqiao Dictionary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Online Dictionary of Maqiao!</h1>
+    <!-- Search Form -->
+    <form action="/search" method="GET">
+        <input type="text" name="q" placeholder="Search for a word :)" required>
+        <button type="submit">Search</button>
+    </form>
+    <!-- Image -->
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='maqiaoImage.jpg') }}" alt="Maqiao Image">
+    </div>
+
+</body>
+</html>
+

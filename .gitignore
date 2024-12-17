@@ -1,0 +1,13 @@
+# Virtual environment
+env/
+__pycache__/
+
+# Database files
+*.db
+
+# Migrations cache
+migrations/versions/*.pyc
+
+# Local config
+instance/
+

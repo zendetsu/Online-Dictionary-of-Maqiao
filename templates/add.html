@@ -1,0 +1,39 @@
+@app.route("/")
+def home():
+    entries = DictionaryEntry.query.all()
+    return render_template("home.html", entries=entries)
+
+@app.route("/search", methods=["GET"])
+def search():
+    query = request.args.get("q", "").strip()
+    if not query:
+        return render_template("search.html", results=[], query=query, error="Please enter a search term.")
+
+    results = DictionaryEntry.query.filter(DictionaryEntry.word.contains(query)).all()
+    return render_template("search.html", results=results, query=query, error=None)
+
+@app.route("/add", methods=["GET", "POST"])
+def add():
+    if request.method == "POST":
+        word = request.form.get("word")
+        page_number = request.form.get("page_number", type=int)
+        definition = request.form.get("definition")
+        example = request.form.get("example")
+        related = request.form.get("related")
+
+        # Add to the database
+        new_entry = DictionaryEntry(
+            word=word,
+            page_number=page_number,
+            definition=definition,
+            example=example,
+            related=related
+        )
+        db.session.add(new_entry)
+        db.session.commit()
+        return redirect(url_for("home"))
+
+    return render_template("add.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
